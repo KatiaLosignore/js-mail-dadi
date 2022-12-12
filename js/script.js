@@ -47,15 +47,25 @@ numberResult.innerText = `${messageWins} ${result}`;
 // ______________________________________________________________________________________________
 
 
+// 1 - Prendere gli elementi dal DOM
+// 2 - inserire gli elementi mails, in un Array
+// 3 - Al click del button creo una funzione che controlla l'esito del login
+// 4 - Stampare in pagina l'esito del controllo
 
-const listMails = ['bianchini@libero.it', 'verdini@libero.it', 'rossini@libero.it'];
 
+// 1 - Prendere gli elementi dal DOM
 const emailUser = document.getElementById('email');
 const buttonClick = document.getElementById('button');
 const checkMail = document.getElementById('check');
 
 
+// 2 - Inserire gli elementi mails, in un Array
+const listMails = ['bianchini@libero.it', 'verdini@libero.it', 'rossini@libero.it'];
+
+
 let resultText = 'Login non risponde';
+
+// 3 - Al click del button creare una funzione che controlla l'esito del login
 
 buttonClick.addEventListener("click", function () {
 
@@ -71,6 +81,7 @@ buttonClick.addEventListener("click", function () {
     }
 
    
+    // 4 - Stampare in pagina l'esito del controllo
 
     console.log(resultText);
     
