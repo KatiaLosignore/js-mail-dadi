@@ -62,13 +62,11 @@ const checkMail = document.getElementById('check');
 // 2 - Inserire gli elementi mails, in un Array
 const listMails = ['bianchini@libero.it', 'verdini@libero.it', 'rossini@libero.it'];
 
-
-let resultText = 'Login non risponde';
-
 // 3 - Al click del button creare una funzione che controlla l'esito del login
 
 buttonClick.addEventListener("click", function () {
 
+    let resultText = 'Login non risponde';
 
     for (let i = 0; i < listMails.length; i++) {
         const validation = listMails[i];
