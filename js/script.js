@@ -34,7 +34,7 @@ if (playerNumber > cpuNumber) {
     result = 'nessuno dei due, pareggio';
 }
 
-console.log (result);
+console.log(result);
 
 // 4 - Stampare in pagina i due tiri e il risultato
 
@@ -42,4 +42,40 @@ gamePlayer.innerText = `Player : ${playerNumber}`;
 gameCpu.innerText = `CPU : ${cpuNumber}`;
 numberResult.innerText = `${messageWins} ${result}`;
 
+
+
+// ______________________________________________________________________________________________
+
+
+
+const listMails = ['bianchini@libero.it', 'verdini@libero.it', 'rossini@libero.it'];
+
+const emailUser = document.getElementById('email');
+const buttonClick = document.getElementById('button');
+const checkMail = document.getElementById('check');
+
+
+let resultText = 'Login non risponde';
+
+buttonClick.addEventListener("click", function () {
+
+
+    for (let i = 0; i < listMails.length; i++) {
+        const validation = listMails[i];
+
+
+        if (emailUser.value === validation) {
+            resultText = 'Login riuscita con successo';
+        }
+
+    }
+
+   
+
+    console.log(resultText);
+    
+    checkMail.innerText =  resultText;
+    
+    
+});
 
